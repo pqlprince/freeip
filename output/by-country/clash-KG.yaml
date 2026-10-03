@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇰🇬 KG 01 - xiaohe
   type: vless
-  server: 172.64.52.6
-  port: 2052
+  server: 172.64.42.85
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -19,21 +19,22 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 02 - xiaohe
   type: vless
-  server: 172.64.53.55
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 188.114.96.3
+  port: 2087
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ez-98919a.motoricb.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ez-98919a.motoricb.workers.dev
 - name: 🇰🇬 KG 03 - xiaohe
   type: vless
-  server: 172.64.32.103
-  port: 2052
+  server: 162.159.0.53
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -45,7 +46,7 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 04 - xiaohe
   type: vless
-  server: 162.159.43.187
+  server: 172.64.158.146
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -58,8 +59,48 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇬 KG 05 - xiaohe
   type: vless
-  server: 104.18.34.14
-  port: 2082
+  server: 162.159.24.131
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇬 KG 06 - xiaohe
+  type: vless
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇰🇬 KG 07 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
+- name: 🇰🇬 KG 08 - xiaohe
+  type: vless
+  server: 162.159.24.131
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -79,6 +120,9 @@ proxy-groups:
   - 🇰🇬 KG 03 - xiaohe
   - 🇰🇬 KG 04 - xiaohe
   - 🇰🇬 KG 05 - xiaohe
+  - 🇰🇬 KG 06 - xiaohe
+  - 🇰🇬 KG 07 - xiaohe
+  - 🇰🇬 KG 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +133,8 @@ proxy-groups:
   - 🇰🇬 KG 03 - xiaohe
   - 🇰🇬 KG 04 - xiaohe
   - 🇰🇬 KG 05 - xiaohe
+  - 🇰🇬 KG 06 - xiaohe
+  - 🇰🇬 KG 07 - xiaohe
+  - 🇰🇬 KG 08 - xiaohe
 rules:
 - MATCH,PROXIES
